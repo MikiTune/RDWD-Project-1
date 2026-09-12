@@ -1,0 +1,134 @@
+body {background-color: #B5D4CE;} /* First example of a tag selector */
+.container, footer, .imgGrid1, .imgGrid2, .articles, .twoSides {display: grid;
+    grid-template-columns: 50% 50%;} /* First example of a group selector, class selectors and a tag selector */
+.twoSidesForm {display: grid;
+    grid-template-columns: 40% 60%;
+    padding-left: 2.5em;} /* Another example of a class selector */
+section {padding: 3em;} /* Another example of a tag selector and padding */
+
+.imgGrid1, .imgGrid2, .articles, .twoSides {grid-gap: 1em;
+    padding-right: 1em;} /* Another example of a group selector */
+
+.twoSides {padding-left: 2em;
+    padding-top: 2em;} /* Another example of a class selector */
+.twoSides iframe, .imgGrid1 img, .imgGrid2 img {margin: auto;} /* Another example of a group selector, along with compound selectors - and margins */
+
+.container {margin: auto; /* Example of margins */
+    background-color: #EFE2CE;
+    font-family: "Calibri", sans-serif;
+    justify-content: center;}
+
+main {background-image: linear-gradient(#EFE2CE, #D4AF82);
+    padding-bottom: 2em;
+padding-top: 1em;}
+
+header, main, .preFooter, footer {grid-column: 1/-1;}
+.preFooter {padding-bottom: 0em;} /* Example of padding */
+
+footer {background-color: #224C49;}
+
+main, .footer {padding-left: 1.5em;
+    padding-right: 1.5em;}
+
+.formHeading {padding: 2em;}
+
+h1, h2 {text-align: center;
+    color: #224C49;
+    font-family: "Fuzzy Bubbles", "Calibri", sans-serif;}
+
+h1 {font-size: 2em;}
+
+h2 {font-size: 1.8em;}
+
+.credit {font-size: 0.8em; font-style: italic;}
+
+footer, footer a {color: #FFFFFF;}
+
+#footerCol3 {grid-column: 1/-1;} /* Example of an ID selector */
+#footerCol1, #footerCol2, #footerCol3 {padding: 1em;} /* Example of a group selector with ID selectors */
+
+.enlarged, .featured {grid-column: 1/-1;
+    margin: auto;}
+
+article {box-shadow: 0.25em 0.25em 1em #776352;
+    padding: 1.5em;
+    background-image: linear-gradient(#D8EBE6, #B5D4CE);
+    border: 6px solid #2F746F;} /* Example of borders */
+
+img, iframe {max-width: 100%;
+    height: auto;}
+
+article, main img, iframe {border-radius: 20px;} /* Example of borders */
+
+.topnav {display: block;
+    overflow: hidden;
+    background-color: #2F746F;}
+
+.topnav a {float: left;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 28px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;}
+
+main a {font-weight: bold;
+    color: #2F746F;} /* Example of a compound selector */
+
+.topnav a:hover {background-color: #FFFFFF;
+    color: #2F746F;
+    font-weight: bold;}
+
+.topnav a.active {background-color: #EFE2CE;
+    color: #2F746F;
+    text-decoration: underline;}
+
+.topnav .icon {display: none;}
+
+@media screen and (max-width: 600px)
+{
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {float: right;
+        display: block;}
+    }
+
+@media screen and (max-width: 600px)
+{
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {position: absolute;
+        right: 0;
+        top: 0;}
+    .topnav.responsive a {float: none;
+        display: block;
+        text-align: left;}
+    }
+    
+@media only screen and (min-width:600px)
+{
+    .container {grid-template-columns: repeat(6,1fr);
+        width: 90%;}
+    .imgGrid2 {grid-template-columns: repeat(3, 1fr);}
+    .enlarged {grid-column: 1/2;}
+    form {width: 90%;
+        margin: auto;}
+    .twoSidesForm {grid-template-columns: 50% 50%;}
+    }
+    
+@media only screen and (min-width:992px)
+{
+    .container {grid-template-columns: repeat(12, 1fr);
+        width: 80%;}
+    .imgGrid1 {grid-template-columns: repeat(4, 25%);
+        margin: auto;
+        padding-right: 3em;}
+    .twoSides {padding: 1.5em 1.5em 2em 3.5em}
+    .articles {grid-column: 1/11;
+        grid-template-columns: 60% 40%;
+        padding-right: 3.5em;}
+    .featured {grid-column: 1/2;
+        grid-row: 1/3;}
+    .filler {grid-column: 2/3;}
+    form {width: 55%;}
+    .twoSidesForm {grid-template-columns: 55% 45%;}
+    }

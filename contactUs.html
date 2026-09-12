@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Barleycove - Sign Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <link href="images/icon.jpg" rel="icon" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="CSS/style.css" rel="stylesheet">
+        
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+    </head>
+
+    <body>
+        
+        <div class="container">
+            
+            <header>
+                <nav class="topnav" id="myTopnav">
+                    <!-- Image representing logo (no image yet) -->
+                    <a href="index.html"><img src="images/logo.png" alt="Barleycove Website Logo"></a>
+                        <a href="index.html">Home</a>
+                        <a href="#">Discover</a>
+						<a href="#">Gallery</a>
+                        <a href="contactUs.html" class="active">Newsletter</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                </nav>
+				<img src="images/heroImg.jpg" alt="Wide view of Barleycove beach and ocean with hills in the distance.">
+            </header>
+
+            
+                <main>
+                    
+                    <div id="formHeading"><h1>Sign Up to Our Newsletter!</h1></div>
+                    
+                    <form method="post" action="http://tusprojects.net/rwd-response-beach.php">
+
+                    <fieldset>
+					   
+                        <legend>Your Details</legend>
+                        
+						<div class="twoSidesForm">
+						
+							<div class="col1">
+
+								<p><label for="first_name">First name: </label></p>
+								<p><label for="sur_name">Last name: </label></p>
+                                <p><label for="county">County: </label></p>
+								<p><label for="email1">Email: </label></p>
+								<p><label for="email2">Retype your email: </label></p>        
+								<p><label for="phone">Phone: </label></p>
+								
+							</div>
+								
+							<div class="col2">
+								<p><input type="text" name="first_name" id="first_name"></p>
+								<p><input type="text" name="sur_name" id="sur_name"></p>
+                                <p><input type="text" name="county" id="county"></p>
+								<p><input type="email" name="email1" id="email1"></p>
+                                <p><input type="email" name="email2" id="email2"></p>
+								<p><input type="tel" name="phone" id="phone"></p>
+                            </div>
+                                
+                        </div>
+                        
+                    </fieldset>
+                        
+                        <div>
+                        
+                        <fieldset>
+                                
+                                <legend>What are your interests? (Tick all that apply.)</legend>
+                            
+                                <div class="twoSidesForm">
+                                    <div class="cola">
+                                        <p><label for="coast">Coastal Escapes</label></p>
+                                        <p><label for="free">Free Things to Do</label></p>
+                                        <p><label for="blue">Blue Flag Beaches</label></p>
+                                        <p><label for="outdoors">The Great Outdoors</label></p>
+                                        <p><label for="dog">Dog Friendly Beaches</label></p>
+                                    </div>
+                            
+                                    <div class="colb">
+                                        <p><input type="checkbox" name="interest[]" value="coast" id="coast"></p>
+                                        <p><input type="checkbox" name="interest[]" value="free" id="free"></p>
+                                        <p><input type="checkbox" name="interest[]" value="blue" id="blue"></p>
+                                        <p><input type="checkbox" name="interest[]" value="outdoors" id="outdoors"></p>
+                                        <p><input type="checkbox" name="interest[]" value="dog" id="dog"></p>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            
+                        </div>
+                            
+                        <div class="twoSides">
+                            <input type="submit" value="Submit"><input type="reset" value="Reset">
+                        </div>
+                        
+                        <hr>
+                        
+                            <p><a href="index.html">Cancel</a></p>
+                        </form>
+
+                </main>
+
+                <footer>
+                <div class="preFooter">
+                <img src="images/preFooter.jpg" alt="A girl surfing on the waves of the footer, near the bottom of the web page.">
+            </div>
+				<div id="footerCol1">
+					<h3>Contact</h3>
+                    <address>Email: <a href="mailto:#">placeholder@idk.com</a></address>
+				</div>
+				<div id="footerCol2">
+                    <h3>Also Visit:</h3>
+					<a href="#"><img src="images/fb.jpg" alt="Facebook Icon"></a>
+					<a href="#"><img src="images/yt.jpg" alt="YouTube Icon"></a>
+				</div>
+                <div id="footerCol3">
+                    <h3>Notice</h3>
+					<p>This website was made for a web development/design project, as a means of assessment. So, just letting you know, this website isn't being maintained by a government body or organisation or anything. :]</p>
+				</div>
+			</footer>
+            
+        </div>
+        
+    </body>
+
+
+
+
+</html>

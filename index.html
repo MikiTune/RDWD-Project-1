@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Barleycove - Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <link href="images/icon.jpg" rel="icon" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="CSS/style.css" rel="stylesheet">
+        
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+        
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            
+            <header>
+                <nav class="topnav" id="myTopnav">
+                    <!-- Image representing logo (no image yet) -->
+                    <a href="index.html"><img src="images/logo.png" alt="Barleycove Website Logo"></a>
+                        <a href="index.html" class="active">Home</a>
+                        <a href="#">Discover</a>
+						<a href="#">Gallery</a>
+                        <a href="contactUs.html">Newsletter</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                </nav>
+				<img src="images/heroImg.jpg" alt="Wide view of Barleycove beach and ocean with hills in the distance.">
+            </header>
+			
+			<main>
+                <section>
+                    <h1>Discover the beauty of Barleycove</h1>
+                    <div class="imgGrid1">
+                        <img src="images/walkway.jpg" alt="A walkway or bridge, slightly above water.">
+                        <img src="images/wideview.jpg" alt="Wide view of Barleycove and its sand dunes.">
+                        <img src="images/waves.jpg" alt="Close-up of the ocean water as it hits the sand.">
+                        <img src="images/hotel.jpg" alt="Barleycove Beach Hotel.">
+                    </div>
+                </section>
+                
+                <section>
+                    <div class="twoSides">
+                        <div>
+                            <iframe width="360" height="315" src="https://www.youtube.com/embed/hJgo76kYQC8?si=kW7I0L1XCbE_nRq2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="credit">Video: "Barleycove Beach June 2018" by Ian Flavin</p>
+                        </div>
+                        <div class="boxText">
+                            <h2>The Beach</h2>
+                            <p>Did you know that the scenery at Barleycove was created by a tsunami? This beach really is the picture of elegant opulence!</p>
+                        </div>
+                    </div>
+                </section>
+				<!-- Insert YouTube video here -->
+				
+                <section>
+                    <div class="articles">
+                        <div class="featured">
+                            <h2>Featured Article!</h2>
+                            <article>
+                                <p>Don't know where <em>your</em> next adventure should take place? Why not check out our <a href="contactUs.html">newsletter</a> for ideas?</p>
+                                <p><em>Disclaimer: There is a sign up page, but no actual newsletter - the "sign up for our newsletter" is solely for the purposes of testing and assessment.</em></p>
+                            </article>
+                        </div>
+                        <article class="filler">
+                            <p>This article is just filler.</p>
+                        </article>
+                        <article class="filler">
+                            <p>HTML: :]<br>CSS: >:(</p>
+                    </article>
+                    </div>
+                </section>
+                
+                <section class="cork">
+                    <h1>What Cork Has To Offer</h1>
+                    <div class="imgGrid2">
+                        <div class="enlarged"><img src="images/bridge.jpg" alt="The Mizen Head Bridge at sunset."></div>
+                        <img src="images/cobh.jpg" alt="Colorful buildings in Cobh.">
+                        <img src="images/expressway.jpg" alt="The Expressway bus going to Cork (51 route).">
+                    </div>
+                </section>
+                
+                <section class="moreInfo">
+                    <h2>More Information</h2>
+                    <p>If you want to read more about Barleycove, or County Cork in general, you should absolutely check out the <a href="https://www.discoverireland.ie/">Discover Ireland</a> and <a href="https://www.corkcoco.ie/en">Cork County Council</a> websites!</p>
+                </section>
+                
+            </main>
+			
+			<footer>
+                <div class="preFooter">
+                <img src="images/preFooter.jpg" alt="A girl surfing on the waves of the footer, near the bottom of the web page.">
+            </div>
+				<div id="footerCol1">
+					<h3>Contact</h3>
+                    <address>Email: <a href="mailto:#">placeholder@idk.com</a></address>
+				</div>
+				<div id="footerCol2">
+                    <h3>Also Visit:</h3>
+					<a href="#"><img src="images/fb.jpg" alt="Facebook Icon"></a>
+					<a href="#"><img src="images/yt.jpg" alt="YouTube Icon"></a>
+				</div>
+                <div id="footerCol3">
+                    <h3>Notice</h3>
+					<p>This website was made for a web development/design project, as a means of assessment. So, just letting you know, this website isn't being maintained by a government body or organisation or anything. :]</p>
+				</div>
+			</footer>
+            
+        </div>
+    </body>
+    
+</html>
